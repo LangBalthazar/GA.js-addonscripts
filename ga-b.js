@@ -107,7 +107,7 @@ var cybercomTracking = new Object();
 			});
 		});
 
-        var utm_source = "bona.com";
+        var utm_source = "website.com";
         var utm_medium = "web";
 
 		jqRoot.find('a[href^="http://"], a[href^="https://"]').each(function() {
@@ -116,7 +116,7 @@ var cybercomTracking = new Object();
 			var url = jqElem.attr('href');
 			var host = location.host;
 			if (url.replace('http://', '').replace('https://', '').indexOf(host) < 0) {
-                if (url.indexOf("mybonahome.com") >= 0) {
+                if (url.indexOf("website.com") >= 0) {
                     var utm_content = "";
                     if (jqElem.parents('.menu-primary-container').size() > 0) {
                         utm_content = "MainNav_";
